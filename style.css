@@ -1,20 +1,147 @@
-/* Tabi Studio pages (GitHub Pages). Plain CSS, light and dark. */
-:root { --bg: #FFF9F0; --card: #FFFFFF; --text: #2B2238; --muted: #6B6178; --accent: #1B2559; --link: #C4561B; --line: #EADFCF; }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #14172B; --card: #1C2038; --text: #ECEAF4; --muted: #A9A6BD; --accent: #C9CFF2; --link: #FF9D5C; --line: #2E3355; }
+/* Tabi Studio website (GitHub Pages). Brand kit v1: Indigo ink, Jade, Paper, Slate;
+   Lexend for headings, Instrument Sans for text. Light and dark, phone first. */
+
+:root {
+  --ink: #1B2559;
+  --jade: #19A77E;
+  --jade-strong: #128763;
+  --paper: #F4F6F8;
+  --slate: #5B6478;
+  --bg: var(--paper);
+  --surface: #FFFFFF;
+  --text: var(--ink);
+  --muted: var(--slate);
+  --line: #DDE2EA;
+  --accent: var(--jade);
+  --accent-text: #FFFFFF;
+  --link: var(--jade-strong);
+  --badge-bg: #E3F5EE;
+  --badge-text: #0F6B51;
+  --shadow: 0 1px 2px rgba(27, 37, 89, 0.06), 0 8px 24px rgba(27, 37, 89, 0.06);
+  --radius: 18px;
+  color-scheme: light;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11173A;
+    --surface: #1A2250;
+    --text: #EEF1F8;
+    --muted: #A7AEC6;
+    --line: #2C3569;
+    --accent: #3DCB9E;
+    --accent-text: #0D1330;
+    --link: #3DCB9E;
+    --badge-bg: #173F43;
+    --badge-text: #7BE3C1;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11173A; --surface: #1A2250; --text: #EEF1F8; --muted: #A7AEC6; --line: #2C3569;
+  --accent: #3DCB9E; --accent-text: #0D1330; --link: #3DCB9E; --badge-bg: #173F43; --badge-text: #7BE3C1;
+  color-scheme: dark;
+}
+
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
-header a.brand { font-weight: 700; color: var(--accent); text-decoration: none; font-size: 20px; }
-h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; color: var(--accent); }
-h2 { font-size: 21px; margin: 32px 0 8px; color: var(--accent); }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--link); text-underline-offset: 3px; }
+h1, h2, h3 { font-family: "Lexend", "Instrument Sans", system-ui, sans-serif; line-height: 1.2; margin: 0 0 8px; }
+h1 { font-size: clamp(32px, 6vw, 48px); letter-spacing: -0.02em; }
+h2 { font-size: clamp(24px, 4vw, 30px); margin-top: 8px; }
+h3 { font-size: 20px; }
 p, li { max-width: 68ch; }
-a { color: var(--link); }
 .muted { color: var(--muted); font-size: 15px; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
+
+/* Layout */
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+main { padding: 8px 0 48px; }
+section { padding: 36px 0 8px; }
+
+/* Header */
+.site-header { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 64px; }
+.logo { display: inline-flex; align-items: center; }
+.logo img { height: 30px; width: auto; }
+.logo .on-dark { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo .on-light { display: none; } :root:not([data-theme="light"]) .logo .on-dark { display: inline; } }
+:root[data-theme="dark"] .logo .on-light { display: none; }
+:root[data-theme="dark"] .logo .on-dark { display: inline; }
+.nav { display: flex; gap: 18px; font-weight: 600; font-size: 15px; }
+.nav a { color: var(--text); text-decoration: none; }
+.nav a:hover { color: var(--link); }
+
+/* Hero */
+.hero { padding: 48px 0 24px; }
+.hero p.lead { font-size: 20px; color: var(--muted); margin: 8px 0 20px; }
+.badge { display: inline-flex; align-items: center; gap: 8px; background: var(--badge-bg); color: var(--badge-text);
+  font-weight: 700; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+.badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+
+/* Buttons */
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 0 18px;
+  border-radius: 12px; font-weight: 700; text-decoration: none; border: 1.5px solid var(--line); color: var(--text); background: var(--surface); }
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.05); }
+
+/* Cards */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 16px 0; box-shadow: var(--shadow); }
+.apps { display: grid; grid-template-columns: 1fr; gap: 18px; }
+@media (min-width: 820px) { .apps { grid-template-columns: 1fr 1fr; } }
+.app-card { display: flex; flex-direction: column; margin: 0; }
+.app-head { display: flex; gap: 16px; align-items: center; margin-bottom: 10px; }
+.app-icon { width: 76px; height: 76px; border-radius: 20px; flex: none; box-shadow: var(--shadow); }
+.app-head h3 { margin: 0; font-size: 24px; }
+.app-head p { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+.app-card ul { padding-left: 20px; margin: 8px 0 12px; }
+.app-card .meta { color: var(--muted); font-size: 14px; margin-top: auto; padding-top: 6px; }
+
+/* Screenshots: a row that scrolls sideways on phones */
+.shots { display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 14px; scroll-snap-type: x mandatory; }
+.shots img { height: 420px; width: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; flex: none; }
+@media (max-width: 600px) { .shots img { height: 340px; } }
+
+/* Steps and features */
+.steps { counter-reset: step; list-style: none; padding: 0; }
+.steps li { counter-increment: step; position: relative; padding-left: 44px; margin: 12px 0; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--accent); color: var(--accent-text); font-weight: 800; display: grid; place-items: center; font-size: 15px; }
+.features { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 720px) { .features { grid-template-columns: 1fr 1fr; } }
+.features .card { margin: 0; }
+.features h3 { font-size: 17px; margin-bottom: 4px; }
+.features p { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* Tables (privacy pages) */
 table { border-collapse: collapse; width: 100%; font-size: 15px; }
-th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
 .table-wrap { overflow-x: auto; }
-footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+
+/* Older page header (privacy pages) */
+header:not(.site-header) { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
+header a.brand { font-family: "Lexend", sans-serif; font-weight: 700; color: var(--text); text-decoration: none; font-size: 20px; }
+body > main:not(.site) { max-width: 760px; margin: 0 auto; padding: 0 16px 64px; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.site-footer a { color: var(--muted); }
+footer:not(.site-footer) { margin-top: 48px; color: var(--muted); font-size: 14px; }
+
+/* Narrow phones (360-420 px): a smaller logo and menu, and long file names may wrap. */
+@media (max-width: 420px) {
+  .logo img { height: 25px; }
+  .nav { gap: 12px; font-size: 14px; }
+}
+code { overflow-wrap: anywhere; }

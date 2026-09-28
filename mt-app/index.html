@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MT App · Tabi Studio</title>
+<meta name="description" content="MT App: a private money tracker for Android. Budgets, bills, savings goals, receipts and crypto. No sign-up, works offline. Open for testing.">
+<meta property="og:title" content="MT App by Tabi Studio">
+<meta property="og:description" content="A private money tracker for Android: no sign-up, works offline, everything stays on your phone.">
+<meta property="og:image" content="https://lextabi.github.io/tabistudio/mt-app/screenshots/home_light.png">
+<link rel="icon" href="../favicon-32.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Lexend:wght@500;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="Tabi Studio home">
+      <img class="on-light" src="../assets/brand/tabi-lockup-color.svg" alt="tabi studio" width="159" height="30">
+      <img class="on-dark" src="../assets/brand/tabi-lockup-white.svg" alt="tabi studio" width="159" height="30">
+    </a>
+    <nav class="nav"><a href="../#apps">Apps</a><a href="../#about">About</a><a href="../#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main class="site">
+  <div class="wrap">
+    <section class="hero">
+      <div class="app-head">
+        <img class="app-icon" src="../assets/apps/mt-app.svg" alt="" width="76" height="76">
+        <div><span class="badge">Open testing · v0.3.0</span></div>
+      </div>
+      <h1>MT App</h1>
+      <p class="lead">A private money tracker for budgets, bills, savings goals, receipts and crypto. No sign-up, works offline, and everything stays on your phone.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://drive.google.com/drive/folders/1JCPMwcSVHf7v65fOyu4IvbGTmXTMpTk5?usp=sharing">Download for Android</a>
+        <a class="btn" href="https://github.com/lextabi/mt_app_release/blob/main/CHANGELOG.md">What's new</a>
+      </div>
+      <p class="muted">Android 7.0 or newer · Free · No account needed</p>
+    </section>
+
+    <div class="shots" aria-label="Screenshots">
+      <img src="screenshots/home_light.png" alt="Home screen" loading="lazy">
+      <img src="screenshots/home_dark.png" alt="Home screen in dark mode" loading="lazy">
+      <img src="screenshots/reports.png" alt="Reports" loading="lazy">
+      <img src="screenshots/widget.png" alt="Home-screen widget" loading="lazy">
+    </div>
+
+    <section>
+      <h2>What it does</h2>
+      <div class="features">
+        <div class="card"><h3>Accounts</h3><p>Cash, bank, e-wallets (GCash, Maya), savings and credit cards, with your net worth at a glance.</p></div>
+        <div class="card"><h3>Safe to spend today</h3><p>How much you can spend each day until your next payday, after bills.</p></div>
+        <div class="card"><h3>Budgets</h3><p>Monthly limits per category, following your payday or the 15th/30th, with rollover of leftovers.</p></div>
+        <div class="card"><h3>Bills and reminders</h3><p>Recurring bills, credit card due dates and installments, with notifications before they're due.</p></div>
+        <div class="card"><h3>Scan receipts</h3><p>Take a photo of a receipt and the total is filled in for you, read on the phone itself.</p></div>
+        <div class="card"><h3>Crypto</h3><p>Track coins like BNB, USDT or XRP; the value updates to the latest price when you open the app.</p></div>
+        <div class="card"><h3>Goals and utang</h3><p>Savings goals with a monthly target, and money lent to or borrowed from people.</p></div>
+        <div class="card"><h3>Reports and widget</h3><p>Spending by category, net worth over 12 months, a monthly recap, CSV export, and a home-screen widget.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Getting started</h2>
+      <ol class="steps">
+        <li><strong>Install</strong> the newest <code>mt_app_&lt;version&gt;.apk</code> from the <a href="https://drive.google.com/drive/folders/1JCPMwcSVHf7v65fOyu4IvbGTmXTMpTk5?usp=sharing">download folder</a> (see <a href="../#testing">how testing works</a>).</li>
+        <li><strong>Set up your accounts</strong> and balances on the first run, or restore a backup.</li>
+        <li><strong>Turn on automatic backups</strong> in Settings; they're saved in <code>Download/MT App</code>.</li>
+      </ol>
+      <p class="muted">Updating: open the new APK and tap Update; your data stays. <strong>Don't uninstall the old version first</strong>: uninstalling deletes everything the app has saved on your phone. Making a backup before updating is a good habit.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Your data</h2>
+      <ul>
+        <li>Everything is saved only on your phone. The app has no account and no server.</li>
+        <li>The only thing it gets from the internet is crypto prices from <a href="https://www.coingecko.com">CoinGecko</a>, and only if you track crypto. It sends just the coin names (e.g. "BNB"), never your amounts or other data.</li>
+        <li>Backups are files you control. Copy them to Drive or a computer now and then, since a lost or reset phone takes its files with it.</li>
+      </ul>
+      <p class="muted">Questions about your data: <a href="mailto:tabistudio.dev@gmail.com">tabistudio.dev@gmail.com</a></p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Tabi Studio</span>
+    <span><a href="../">Tabi Studio</a> · <a href="mailto:tabistudio.dev@gmail.com">tabistudio.dev@gmail.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
