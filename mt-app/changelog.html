@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's new in MT App</title>
+<meta name="description" content="Every MT App version for testers: what changed, how to update, and each APK's SHA-256 checksum.">
+<link rel="icon" href="../favicon-32.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Lexend:wght@500;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="Tabi Studio home">
+      <img class="on-light" src="../assets/brand/tabi-lockup-color.svg" alt="tabi studio" width="159" height="30">
+      <img class="on-dark" src="../assets/brand/tabi-lockup-white.svg" alt="tabi studio" width="159" height="30">
+    </a>
+    <nav class="nav"><a href="./">MT App</a><a href="../#apps">Apps</a><a href="../#contact">Contact</a></nav>
+  </div>
+</header>
+<main>
+
+  <h1>What's new in MT App</h1>
+  <p class="muted">Every version for testers, newest first. Download the APK from the
+  <a href="https://drive.google.com/drive/folders/1sWWszXSHRBOq0uFsS5x2ZFQ3K0VYuake?usp=sharing">download folder</a>; the file name has the version in it
+  (<code>mt_app_&lt;version&gt;.apk</code>). Each version lists its SHA-256 checksum, so you can check
+  that your download is the real file.</p>
+
+  <h2 id="v0-3-2">0.3.2 (September 29, 2026)</h2>
+  <p>Download: <code>mt_app_0.3.2.apk</code> from the <a href="https://drive.google.com/drive/folders/1sWWszXSHRBOq0uFsS5x2ZFQ3K0VYuake?usp=sharing">Google Drive folder</a> · SHA-256 <code>2627b03f5452ddf7fae9536b4f4a5bd25c5d3b501fe2fb28f1af9d0a5a475424</code></p>
+  <p><strong>New: transfer fees</strong></p>
+  <ul>
+  <li>A transfer now has an optional <strong>Transfer fee</strong> field, e.g. ₱1,000 plus a ₱10 InstaPay fee.
+  </li>
+  <li>Only the ₱1,000 reaches the other account. The ₱10 is taken from the account you sent from and saved as an expense under <strong>Transaction Fees</strong> (the category is added the first time you use it), so it shows in your spending and reports.
+  </li></ul>
+  <p><strong>New: built-in calculator</strong></p>
+  <ul>
+  <li>Tap the calculator icon in an amount field, work it out (+ − × ÷ %), and tap <strong>Use</strong> to fill in the result. Also on the Home screen's top bar.
+  </li>
+  <li><code>1000 + 10%</code> gives 1,100, like a phone calculator, and there are no rounding errors.
+  </li></ul>
+  <p><strong>Fixed: app lock</strong></p>
+  <ul>
+  <li>With App lock on, coming back to the app showed "MT App is locked" and the <strong>Unlock</strong> button did nothing. Now the fingerprint prompt opens by itself when you come back, and <strong>Unlock</strong> always tries again.
+  </li></ul>
+  <p><strong>Updating from 0.3.1:</strong> open the new APK and tap <strong>Update</strong>. Your data is kept. Don't uninstall first.</p>
+  <h2 id="v0-3-1">0.3.1 (September 28, 2026)</h2>
+  <p>Download: <code>mt_app_0.3.1.apk</code> from the <a href="https://drive.google.com/drive/folders/1sWWszXSHRBOq0uFsS5x2ZFQ3K0VYuake?usp=sharing">Google Drive folder</a> · SHA-256 <code>de2c8452e689a562d7e0ff414c5a771442a6e3347944a2ec52f524fb1f5a3db6</code></p>
+  <p><strong>New: Tabi Studio splash</strong></p>
+  <ul>
+  <li>MT App now opens with the Tabi Studio logo, like the studio's other app, Runling. It shows for about a second while the app loads; tap it to skip.
+  </li>
+  <li>Opening the app from the home-screen widget skips it and goes straight in.
+  </li></ul>
+  <p><strong>Home-screen widget</strong></p>
+  <ul>
+  <li><strong>Safe to spend today</strong> now changes to the new day's amount by itself (within an hour after midnight), even if you don't open the app. Before, it kept showing yesterday's amount until you opened MT App.
+  </li>
+  <li>After payday the widget says "New cycle: tap to update"; tap it to see the new numbers.
+  </li></ul>
+  <p><strong>Updating from 0.3.0:</strong> open the new APK and tap <strong>Update</strong>. Your data is kept. Don't uninstall first.</p>
+  <h2 id="v0-3-0">0.3.0 (September 27, 2026)</h2>
+  <p>Download: <code>mt_app_0.3.0.apk</code> from the <a href="https://drive.google.com/drive/folders/1sWWszXSHRBOq0uFsS5x2ZFQ3K0VYuake?usp=sharing">Google Drive folder</a> · SHA-256 <code>79c8fb7f9dd8d96b562f5583c23c59a9aa507c5a3b6eb808e5b296d1eda5cfe7</code></p>
+  <p><strong>New: crypto accounts</strong></p>
+  <ul>
+  <li>Add a <strong>Crypto</strong> account (e.g. Binance) and the coins you hold, like 1 BNB. Search by name or symbol; the list shows each coin's rank so you pick the right one (several coins share symbols like XRP).
+  </li>
+  <li>The value follows live prices from CoinGecko: updated when you open the app, when you come back to it and every 2 minutes while it's open. Pull down to update right away.
+  </li>
+  <li>See the 24-hour change, and your gain or loss if you enter what you paid.
+  </li>
+  <li>Crypto counts in your net worth (and its chart), but not in <strong>Safe to spend</strong>.
+  </li>
+  <li>Offline, the last prices stay with the time they're from.
+  </li>
+  <li>Coins not on CoinGecko can be added with your own price.
+  </li></ul>
+  <p><strong>Privacy:</strong> the app now uses the internet, only to get crypto prices. It sends just the coin names, never your amounts.</p>
+  <p><strong>Updating from 0.2.0:</strong> open the new APK and tap <strong>Update</strong>. Your data is kept. Don't uninstall first.</p>
+  <h2 id="v0-2-0">0.2.0 (September 27, 2026)</h2>
+  <p>Download: <code>mt_app_0.2.0.apk</code> from the <a href="https://drive.google.com/drive/folders/1sWWszXSHRBOq0uFsS5x2ZFQ3K0VYuake?usp=sharing">Google Drive folder</a> · SHA-256 <code>6622add69138bb0461a81c853ab2770e81e38a81f7103cdb283fe60a34e645e9</code></p>
+  <p><strong>New look</strong></p>
+  <ul>
+  <li>New app icon and splash screen.
+  </li>
+  <li>Fresh design: a gradient balance card with frosted glass, a see-through bottom bar with a big + button, numbers that count up, and a deeper dark mode.
+  </li>
+  <li>Swipe a transaction right to edit it, left to delete it.
+  </li></ul>
+  <p><strong>New features</strong></p>
+  <ul>
+  <li><strong>First-run setup:</strong> a new install asks for your real accounts and balances, or restores a backup.
+  </li>
+  <li><strong>Scan receipts:</strong> fills in the total and the store name from a photo.
+  </li>
+  <li><strong>Home-screen widget:</strong> safe to spend today and net worth, with a + button to add an expense.
+  </li>
+  <li><strong>Net worth over time:</strong> a 12-month chart in Reports and a small trend line on Home.
+  </li>
+  <li><strong>Monthly recap:</strong> how your last budget cycle went, offered on Home when a new cycle starts.
+  </li>
+  <li><strong>Subscription finder:</strong> spots bills you pay every month and turns them into reminders.
+  </li>
+  <li><strong>No-spend days:</strong> marked on the calendar, with your current and best streak.
+  </li>
+  <li><strong>Automatic backups:</strong> daily, weekly or monthly to <code>Download/MT App</code>, plus an optional backup password.
+  </li></ul>
+  <p><strong>Updating from 0.1.0:</strong> open the new APK and tap <strong>Update</strong>. Your data is kept. Don't uninstall first.</p>
+  <h2 id="v0-1-0">0.1.0</h2>
+  <p>First version: accounts, transactions, budgets, recurring bills, reports, savings goals, utang, installments, reminders, CSV import and backups.</p>
+
+  <footer>&copy; 2026 Tabi Studio &middot; <a href="./">Back to MT App</a></footer>
+</main>
+</body>
+</html>
