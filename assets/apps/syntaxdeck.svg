@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72">
+  <!-- SyntaxDeck app icon, "Fanned languages" (approved 30 Sept 2026).
+       108 x 108 Android adaptive canvas; artwork stays inside the 66 dp safe zone.
+       Launchers show the centre 72 x 72 (viewBox 18 18 72 72 for a flat icon).
+       PNGs are drawn by tools/make_icon.py from the same numbers. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#262C6E"/><stop offset="1" stop-color="#13103A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".22" cy=".18" r=".75">
+      <stop offset="0" stop-color="#5B4CF0" stop-opacity=".45"/><stop offset="1" stop-color="#5B4CF0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  </defs>
+  <!-- background layer -->
+  <rect width="108" height="108" fill="url(#bg)"/>
+  <rect width="108" height="108" fill="url(#glow)"/>
+  <!-- foreground layer -->
+  <rect x="38" y="30" width="32" height="46" rx="7" fill="#2EA46A" transform="rotate(-14 54 86)"/>
+  <rect x="38" y="30" width="32" height="46" rx="7" fill="#E8A317" transform="rotate(14 54 86)"/>
+  <rect x="38" y="30" width="32" height="46" rx="7" fill="#3B6FE0" transform="rotate(-5 54 86)"/>
+  <rect x="36" y="35" width="36" height="48" rx="8" fill="#08061E" opacity=".43" filter="url(#shadow)"/>
+  <rect x="36" y="33" width="36" height="48" rx="8" fill="#FFFFFF"/>
+  <path d="M43 50l7 7-7 7M54 64h10" fill="none" stroke="#5B4CF0" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

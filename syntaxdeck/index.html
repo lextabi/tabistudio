@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SyntaxDeck · Tabi Studio</title>
+<meta name="description" content="SyntaxDeck: an offline cheat sheet for coders on Android. Linux commands and Bash with real, tested examples and fast search. Open for testing.">
+<meta property="og:title" content="SyntaxDeck by Tabi Studio">
+<meta property="og:description" content="An offline cheat sheet for coders: Linux commands and Bash with real, tested examples and fast search.">
+<meta property="og:image" content="https://lextabi.github.io/tabistudio/syntaxdeck/screenshots/search_dark.png">
+<link rel="icon" href="../favicon-32.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Lexend:wght@500;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="Tabi Studio home">
+      <img class="on-light" src="../assets/brand/tabi-lockup-color.svg" alt="tabi studio" width="159" height="30">
+      <img class="on-dark" src="../assets/brand/tabi-lockup-white.svg" alt="tabi studio" width="159" height="30">
+    </a>
+    <nav class="nav"><a href="../#apps">Apps</a><a href="../#about">About</a><a href="../#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main class="site">
+  <div class="wrap">
+    <section class="hero">
+      <div class="app-head">
+        <img class="app-icon" src="../assets/apps/syntaxdeck.svg" alt="" width="76" height="76">
+        <div><span class="badge">Open testing · v0.1.0</span></div>
+      </div>
+      <h1>SyntaxDeck</h1>
+      <p class="lead">An offline cheat sheet for coders. Look up a command, see real examples with their real output, and copy what you need. No sign-up, no internet needed.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://drive.google.com/drive/folders/1hxsgpmCCn9-vb1rR1pMUIoz9_aeh5L5P?usp=sharing">Download for Android</a>
+        <a class="btn" href="changelog.html">What's new</a>
+      </div>
+      <p class="muted">Android 7.0 or newer · Free · No account needed</p>
+    </section>
+
+    <div class="shots" aria-label="Screenshots">
+      <img src="screenshots/search_dark.png" alt="Search results for 2&gt; in dark mode" loading="lazy">
+      <img src="screenshots/browse_light.png" alt="Browse with the Bash and Linux essentials packs" loading="lazy">
+      <img src="screenshots/card_dark.png" alt="The card for $? with examples and output" loading="lazy">
+      <img src="screenshots/saved_dark.png" alt="Saved favorites and recently viewed cards" loading="lazy">
+    </div>
+
+    <section>
+      <h2>What it does</h2>
+      <div class="features">
+        <div class="card"><h3>Linux essentials</h3><p>147 everyday commands: files, text, permissions, processes, networking, archives, packages and services.</p></div>
+        <div class="card"><h3>Bash</h3><p>46 cards on the shell itself: pipes and redirects, <code>&amp;&amp;</code>, history, aliases, variables, loops and scripts.</p></div>
+        <div class="card"><h3>Real, tested examples</h3><p>Every example was run on Linux, and its output is shown as it really appears.</p></div>
+        <div class="card"><h3>Fast search</h3><p>Results as you type, typos fixed for you, and symbols like <code>2&gt;&amp;1</code> or <code>$?</code> work too.</p></div>
+        <div class="card"><h3>Danger warnings</h3><p>Commands that delete or overwrite things are marked, with a plain note on what can go wrong.</p></div>
+        <div class="card"><h3>Copy and share</h3><p>Copy any syntax line or example with one tap, or share a card through your phone's share menu.</p></div>
+        <div class="card"><h3>Favorites</h3><p>Star the cards you use often, and find the ones you opened recently in Saved.</p></div>
+        <div class="card"><h3>Light and dark</h3><p>Follows your phone's theme, and the code text size is yours to choose.</p></div>
+      </div>
+      <p class="muted">More languages (PowerShell, Python, Git and others) come in later versions.</p>
+    </section>
+
+    <section>
+      <h2>Getting started</h2>
+      <ol class="steps">
+        <li><strong>Install</strong> the newest <code>syntaxdeck_&lt;version&gt;.apk</code> from the <a href="https://drive.google.com/drive/folders/1hxsgpmCCn9-vb1rR1pMUIoz9_aeh5L5P?usp=sharing">download folder</a> (see <a href="../#testing">how testing works</a>).</li>
+        <li><strong>Search</strong> for a command or a task, or open <strong>Browse</strong> to look through a pack.</li>
+        <li><strong>Tap the star</strong> on a card to keep it in Saved.</li>
+      </ol>
+      <p class="muted">Updating: open the new APK and tap Update; your favorites stay. Don't uninstall the old version first: uninstalling deletes your favorites and history.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>Your data</h2>
+      <ul>
+        <li>SyntaxDeck collects no data. It has no account, no server, no ads and no analytics.</li>
+        <li>It asks for no permissions and doesn't use the internet: all cards are inside the app.</li>
+        <li>Your favorites and recently viewed cards are saved only on your phone, and uninstalling the app deletes them.</li>
+        <li>When you share a card, your phone's share menu sends it to the app you pick. SyntaxDeck sees nothing of it.</li>
+      </ul>
+      <p class="muted">Questions about your data: <a href="mailto:tabistudio.dev@gmail.com">tabistudio.dev@gmail.com</a></p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Tabi Studio</span>
+    <span><a href="../">Tabi Studio</a> · <a href="mailto:tabistudio.dev@gmail.com">tabistudio.dev@gmail.com</a></span>
+  </div>
+</footer>
+</body>
+</html>

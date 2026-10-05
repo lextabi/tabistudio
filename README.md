@@ -5,20 +5,22 @@ The official Tabi Studio website, served with GitHub Pages at https://lextabi.gi
 
 | Page | What's on it |
 |---|---|
-| `index.html` | Studio home: the apps (Runling and MT App open for testing, Calm Crew coming soon), how testing works, about, contact |
+| `index.html` | Studio home: the apps (Runling, MT App and SyntaxDeck open for testing, Calm Crew coming soon), how testing works, about, contact |
 | `runling/index.html` | Runling: screenshots, features, getting started, your data |
 | `runling/changelog.html` | What's new: every Runling version for testers, with its APK's SHA-256 |
 | `runling/privacy.html` | Runling privacy policy (linked from the game and Health Connect: **keep this URL**) |
 | `runling/delete-account.html` | How to delete a Runling account (Play's "delete account" URL: **keep this URL**) |
 | `mt-app/index.html` | MT App: screenshots, features, getting started, your data |
 | `mt-app/changelog.html` | What's new: every MT App version for testers, with its APK's SHA-256 |
+| `syntaxdeck/index.html` | SyntaxDeck: screenshots, features, getting started, your data (its privacy section is `syntaxdeck/#privacy`) |
+| `syntaxdeck/changelog.html` | What's new: every SyntaxDeck version for testers, with its APK's SHA-256 |
 | `calm-crew/index.html` | Calm Crew: screenshots, features, how it's designed to be calm, getting started, your data |
 | `calm-crew/changelog.html` | What's new: every Calm Crew version for testers, with its APK's SHA-256 (first test version coming soon) |
 | `calm-crew/privacy.html` | Calm Crew privacy policy (**keep this URL**) |
 | `style.css` | Shared styles: brand kit v1 colours (Indigo, Jade, Paper, Slate), Lexend + Instrument Sans, light and dark |
 
 `assets/brand/` holds the logos from the brand kit (`C:\Projects\MyResources\Tabi-Studio-Brand`),
-`assets/apps/` the app icons (Calm Crew's is `calm-crew.png`, resized from the app's `icon-only.png`), and each app folder its screenshots.
+`assets/apps/` the app icons (SyntaxDeck's `syntaxdeck.svg` is the app's `syntaxdeck-icon.svg` cropped to the launcher's visible area; Calm Crew's is `calm-crew.png`, resized from the app's `icon-only.png`), and each app folder its screenshots.
 
 **When an app gets a new version:** add the version at the top of its `changelog.html` (what changed
 in tester-friendly words, the APK file name and its SHA-256), update its version in `index.html` (app
