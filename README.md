@@ -5,7 +5,7 @@ The official Tabi Studio website, served with GitHub Pages at https://lextabi.gi
 
 | Page | What's on it |
 |---|---|
-| `index.html` | Studio home: the apps (Runling, MT App and SyntaxDeck open for testing, Calm Crew coming soon), how testing works, about, contact |
+| `index.html` | Studio home: the apps (Runling, MT App, SyntaxDeck and Calm Crew open for testing), how testing works, about, contact |
 | `runling/index.html` | Runling: screenshots, features, getting started, your data |
 | `runling/changelog.html` | What's new: every Runling version for testers, with its APK's SHA-256 |
 | `runling/privacy.html` | Runling privacy policy (linked from the game and Health Connect: **keep this URL**) |
@@ -15,7 +15,7 @@ The official Tabi Studio website, served with GitHub Pages at https://lextabi.gi
 | `syntaxdeck/index.html` | SyntaxDeck: screenshots, features, getting started, your data (its privacy section is `syntaxdeck/#privacy`) |
 | `syntaxdeck/changelog.html` | What's new: every SyntaxDeck version for testers, with its APK's SHA-256 |
 | `calm-crew/index.html` | Calm Crew: screenshots, features, how it's designed to be calm, getting started, your data |
-| `calm-crew/changelog.html` | What's new: every Calm Crew version for testers, with its APK's SHA-256 (first test version coming soon) |
+| `calm-crew/changelog.html` | What's new: every Calm Crew version for testers, with its APK's SHA-256 |
 | `calm-crew/privacy.html` | Calm Crew privacy policy (**keep this URL**) |
 | `style.css` | Shared styles: brand kit v1 colours (Indigo, Jade, Paper, Slate), Lexend + Instrument Sans, light and dark |
 
@@ -29,11 +29,8 @@ Drive folders. This site is the only public release page; the old `*_release` re
 October 2026. Update `runling/privacy.html` (and its date)
 whenever Runling starts collecting something new.
 
-**Calm Crew** (added 4 Oct 2026) is shown as "coming soon" until its first test APK is built. When it ships:
-add the version at the top of `calm-crew/changelog.html` (replace the "Coming soon" section with the APK file
-name `calmcrew_<version>.apk` and its SHA-256), replace "Coming soon" with the version on its card in
-`index.html` and the badge on `calm-crew/index.html`, and keep `calm-crew/privacy.html` current (update its
-date if the app ever collects or sends anything). The Calm Crew page is public: it describes the app for
-children on the autism spectrum in general and never refers to any real child or family. Until the first
-APK is out, the home card's main button says "Coming soon" and opens the changelog; switch it to
-"Download" (the Calm Crew Drive folder) with the first release.
+**Calm Crew** (added 4 Oct 2026; first test version 0.3.0 on 5 Oct 2026). For each new version: add it at
+the top of `calm-crew/changelog.html` (APK file name `calmcrew_<version>.apk` and its SHA-256), update the
+version on its card in `index.html` and the badge on `calm-crew/index.html`, and keep `calm-crew/privacy.html`
+current (update its date if the app ever collects or sends anything). The Calm Crew page is public: it describes
+the app for children on the autism spectrum in general and never refers to any real child or family.
